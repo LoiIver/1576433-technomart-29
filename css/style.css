@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+.red {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EE3643;
+    padding: 5px 15px;
+}
+
+.green {
+    color: #FFFFFF;
+    background-color: #63A63E;
+    padding: 5px 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
