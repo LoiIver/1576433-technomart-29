@@ -12,14 +12,17 @@
     <header class="main-header">
         <h1 class="visually-hidden">Магазин Техномарт</h1>
         <section class="top-line-header">
-            <div class="top-line-header-container">
+            <div class="top-line-header-container container">
                 <a class="main-header-logo">
                     <img src="img/logo-technomart.svg" alt="Логотип" width="108" height="18">
                 </a>
                 <div class="main-header-search">
-                    <span>Поиск:</span>
-                    <input type="" name="">
-                </div>  
+                    <form method="post">
+                        <label for="productSearchField"></label>
+                        <input type="search" class="product-search-field" id="productSearchField" placeholder="Поиск" />
+                    </form>
+                </div>
+
                 <div class="main-header-bookmarks"><a href="">Закладки: <span class="bookmarks-count">0</span></a></div>
                 <div class="main-header-cart"><a href="">Корзина: <span class="cart-items-count">0</span></a></div>
                 <div class="main-header-order">
@@ -28,7 +31,7 @@
             </div>
         </section>
         <section class="middle-line-header">
-            <div class="middle-line-header-container">
+            <div class="middle-line-header-container container">
                 <p class="header-shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
                 <p class="header-contacts">
                     <a class="header-contact-phone" href="tel:+78125550555">+7 (812) 555-05-55</a><br>
@@ -40,12 +43,12 @@
                 </div>
             </div>
         </section>
-        <section class="botom-line-header">
-            <nav class="main-nav">
+        <section class="botom-line-header ">
+            <nav class="main-nav container">
                 <ul class="main-site-nav">
                     <li class="main-site-nav-item"><a>Главная</a></li>
                     <li class="main-site-nav-item"><a href="">Компания</a></li>
-                    <li class="main-site-nav-item"><a href="">Каталог</a></li>
+                    <li class="main-site-nav-item"><a href="catalog.html">Каталог</a></li>
                     <li class="main-site-nav-item"><a href="">Новости</a></li>
                     <li class="main-site-nav-item"><a href="">Спецпредложения</a></li>
                     <li class="main-site-nav-item"><a href="">Доставка</a></li>
@@ -54,8 +57,8 @@
             </nav>
         </section>
     </header>
-    <main class="container">
-        <section class="section-container">
+    <main>
+        <section class="container services-sectons">
             <div class="tools-slider-container">
                 <div class="tools-slider-content">
                     <div class="tools-slider-content-header">
@@ -63,7 +66,7 @@
                         <span>Настоящие мужские игрушки</span>
                     </div>
                     <div>
-                        <img src="img/slider-perf.png" alt="">
+                        <img src="img/slider-perf.png" width="620" height="266" alt="Рабочий с перфоратором">
                     </div>
                 </div>
                 <div class="tools-slider-content">
@@ -71,13 +74,17 @@
                         <h2 class="header-text">Дрели</h2>
                         <span>Соседям на радость</span>
                     </div>
-                    <img src="img/slider-drill.png" width="620" height="266" alt="Рабочий с дрелью">
+                    <div>
+                        <img src="img/slider-drill.png" width="620" height="266" alt="Рабочий с дрелью">
+                    </div>
                 </div>
-                <a href="catalog.html" class="open-attention-button">Открыть каталог</a>
-                <a href="" class="dots"></a>
-                <a href="" class="dots"></a>
-                <button type="button" class="tools-slider-button-back" disabled>Назад</button>
-                <button type="button" class="tools-slider-button-forward">Вперед</button>
+                <div class="tools-slider-butttons">
+                    <a href="catalog.html" class="open-attention-button">Открыть каталог</a>
+                    <a href="" class="dots"></a>
+                    <a href="" class="dots"></a>
+                    <button type="button" class="tools-slider-button-back" disabled>Назад</button>
+                    <button type="button" class="tools-slider-button-forward">Вперед</button>
+                </div>
             </div>
             <ul class="main-sections-list">
                 <li class="main-section-material">
@@ -89,6 +96,8 @@
                 <li class="main-section-technics">
                     <p>Техника</p><a href="">Для стройки</a>
                 </li>
+            </ul>
+            <ul class="main-services-list">
                 <li class="main-section-discounts">
                     <p>Скидки 50%</p><a href="">На 350 товаров</a>
                 </li>
@@ -97,7 +106,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section-container popular-products">
+        <section class="container popular-products">
             <div class="section-header">
                 <h3 class="section-product-header header-text">Популярные товары:</h3>
                 <a class="section-product-open-products open-attention-button" href="">Все популярные товары</a>
@@ -111,7 +120,7 @@
                     <img src="img/boschbfg9000.png" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"><br>
                     <h4 class="product-name">Перфоратор BOSCH BFG 9000</h4>
                     <p class="old-price">32500 Р.</p>
-                    <a href="" class="product-goto open-attention-button">25500 Р.</a>
+                    <a href="" class="product-goto">25500 Р.</a>
                 </li>
                 <li class="product">
                     <div class="product-action">
@@ -121,7 +130,7 @@
                     <img src="img/boschbfg3000.png" alt="Перфоратор BOSCH BFG 3000" width="144" height="128"><br>
                     <h4 class="product-name">Перфоратор BOSCH BFG 3000</h4>
                     <p class="old-price">22500 Р.</p>
-                    <a href="" class="product-goto open-attention-button ">15500 Р.</a>
+                    <a href="" class="product-goto">15500 Р.</a>
                 </li>
                 <li class="product">
                     <div class="product-action">
@@ -131,7 +140,7 @@
                     <img src="img/boschbfg6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"><br>
                     <h4 class="product-name">Перфоратор BOSCH BFG 6000</h4>
                     <p class="old-price">30500 Р.</p>
-                    <a href="" class="product-goto open-attention-button ">25500 Р.</a>
+                    <a href="" class="product-goto">25500 Р.</a>
                 </li>
                 <li class="product">
                     <div class="product-action">
@@ -140,11 +149,11 @@
                     </div>
                     <img src="img/boschbfg2000.png" alt="Перфоратор BOSCH BFG 2000" width="144" height="128"><br>
                     <h4 class="product-name">Перфоратор BOSCH BFG 2000</h4>
-                    <a href="" class="product-goto open-attention-button ">12500 Р.</a>
+                    <a href="" class="product-goto  ">12500 Р.</a>
                 </li>
             </ul>
         </section>
-        <section class="section-container popular-producers">
+        <section class="container popular-producers">
             <div class="section-header">
                 <h3 class="section-producer-header header-text">Популярные производители:</h3>
                 <a class="section-product-open-producers open-attention-button" href="">Все
@@ -178,7 +187,7 @@
             </ul>
         </section>
         <section class="services">
-            <div class="services-container">
+            <div class="container">
                 <h2 class="services-header header-text">Сервисы</h2>
                 <p class="all-services-description">Хороший интернет-магазин отличается от плохого не только ценами! <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                 </p>
@@ -206,7 +215,7 @@
                 </div>
             </div>
         </section>
-        <div class="bottom-content-container">
+        <div class="bottom-content-container container">
             <section class="about-company">
                 <h2 class="about-company-header-text header-text">Компания &laquo;Техномарт&raquo;</h2>
                 <p class="about-company-description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах. </p>
@@ -229,19 +238,19 @@
     </main>
     <footer class="main-footer page-footer">
         <section class="main-footer-nav">
-            <div class="page-footer-container">
+            <div class="container page-footer-container">
                 <a class="main-footer-logo">
-                    <img src="img/logo-technomart.svg" alt="Логотип" width="220" height="47">
+                    <img src="img/logo-technomart.svg" alt="Логотип" width="138" height="23">
                 </a>
                 <ul class="footer-nav-general-list">
                     <li><a href="">Компании</a></li>
                     <li><a href="">Новости</a></li>
-                    <li><a href="">Каталог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="">Доставка</a></li>
                     <li><a href="">Контакты</a></li>
                 </ul>
             </div>
-            <div class="page-footer-container">
+            <div class="container page-footer-container">
                 <p class="footer-contacts"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel+78125550555">+7
                     (812) 555-05-55</a></p>
                 <ul class="footer-nav-additional-list">
@@ -253,7 +262,7 @@
             </div>
         </section>
         <div class="footer-bottom-line">
-            <div class="page-footer-container">
+            <div class="container page-footer-container">
                 <p class="footer-copy">
                     &copy; 2010–2019 Компания «Техномарт»<br />Все права защищены
                 </p>
