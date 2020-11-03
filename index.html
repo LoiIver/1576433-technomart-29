@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="main-header-bookmarks"><a href="">Закладки: <span class="bookmarks-count">0</span></a></div>
-                <div class="main-header-cart"><a href="">Корзина: <span class="cart-items-count">0</span></a></div>
+                <div class="main-header-cart"><a href="" class="goto-cart">Корзина: <span class="cart-items-count">0</span></a></div>
                 <div class="main-header-order">
                     <a href="" class="make-order">Оформить заказ</a>
                 </div>
@@ -60,7 +60,7 @@
     <main>
         <section class="container services-sectons">
             <div class="tools-slider-container">
-                <div class="tools-slider-content">
+                <div class="tools-slider-content current">
                     <div class="tools-slider-content-header">
                         <h2 class="header-text">Перфораторы</h2>
                         <span>Настоящие мужские игрушки</span>
@@ -111,7 +111,7 @@
                 <h3 class="section-product-header header-text">Популярные товары:</h3>
                 <a class="section-product-open-products open-attention-button" href="">Все популярные товары</a>
             </div>
-            <ul class="product-list">
+            <ul class="main-page-product-list">
                 <li class="product">
                     <div class="product-action">
                         <button type="button" class="buy-product"><span>Купить</span></button>
@@ -122,7 +122,7 @@
                     <p class="old-price">32500 Р.</p>
                     <a href="" class="product-goto">25500 Р.</a>
                 </li>
-                <li class="product">
+                <li class="product new-item">
                     <div class="product-action">
                         <button type="button" class="buy-product"><span>Купить</span></button>
                         <button type="button" class="bookmark-product">В закладки</button>
@@ -142,7 +142,7 @@
                     <p class="old-price">30500 Р.</p>
                     <a href="" class="product-goto">25500 Р.</a>
                 </li>
-                <li class="product">
+                <li class="product new-item">
                     <div class="product-action">
                         <button type="button" class="buy-product"><span>Купить</span></button>
                         <button type="button" class="bookmark-product">В закладки</button>
@@ -293,16 +293,31 @@
 
     </footer>
 
-    <!-- <section class="modal modal-login">
-        <h2 class="header-text"></h2>
-        
-    <button type="button" class="modal-close">Закрыть</button>
-    </section>
     <section class="modal modal-map">
-        <h2 class="header-text"></h2>
-         
-        <button type="button" class="modal-close">Закрыть</button>
-    </section> -->`
+        <button type="button" class="modal-close"> </button>
+        <img src="img/map.png" alt="Карта" width="940" height="450" />
+    </section>
+
+    <section class="modal modal-write-us">
+        <button type="button" class="modal-close"></button>
+        <div class="modal-body">
+            <label for="mailSender" class="mail-sender-label">
+                    Ваше имя:
+                </label>
+            <input id="mailSender" class="mail-sender" placeholder="Имя Фамилия">
+
+            <label for="mailAddress" class="mail-address-label">
+                    Ваш e-mail:
+                </label>
+            <input type="email" id="mailAddress" class="mail-address" placeholder="email@example.com">
+
+            <label for="mailBody" class="mail-body-label">Текст письма:</label>
+            <textarea class="mail-body" placeholder="В свободной форме" rows=7 cols=83></textarea>
+        </div>
+        <div class="modal-footer">
+            <button class="open-attention-button" type="submit ">Отправить</button>
+        </div>
+    </section>
 </body>
 
 </html>
